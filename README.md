@@ -23,4 +23,5 @@ This is a sketch for Arduino Micro based on an example from MHeironimus' [Arduin
 | 15           | n/c         |             |
 
 This pinout is based on [this design from built-to-spec.com](http://www.built-to-spec.com/blog/2009/09/10/using-a-pc-joystick-with-the-arduino/)
-!(http://www.built-to-spec.com/blog/wp-content/uploads/2009/09/Joystick-Dongle1.png)
+
+![a circuit diagram matching the table](http://www.built-to-spec.com/blog/wp-content/uploads/2009/09/Joystick-Dongle1.png)
