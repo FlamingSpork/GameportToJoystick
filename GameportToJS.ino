@@ -14,10 +14,12 @@
 #include <Joystick.h>
 
 //Joystick_ Joystick;
+
 Joystick_ Joystick(JOYSTICK_DEFAULT_REPORT_ID, 
-  JOYSTICK_TYPE_MULTI_AXIS, 4, 0,
+  JOYSTICK_TYPE_JOYSTICK, 4, 0,
   true, true, false, false, false, false,
   true, true, false, false, false);
+
 
 void setup() {
   // Initialize Button Pins
@@ -34,6 +36,11 @@ void setup() {
   // Initialize Joystick Library
   Joystick.begin();
   //Serial.begin(9600);
+
+  Joystick.setXAxisRange(800, 1023);
+  Joystick.setYAxisRange(800, 1023);
+  Joystick.setRudderRange(800, 1023);
+  Joystick.setThrottleRange(800, 1023);
 }
 
 // Constant that maps the phyical pin to the joystick button.
